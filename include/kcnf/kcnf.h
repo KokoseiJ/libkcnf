@@ -4,15 +4,7 @@
 #include <stddef.h>
 #include <stdint.h>
 #include <stdio.h>
-/*
-#include "base64.h"
-#include "util.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdint.h>
-#include <string.h>
-#include <errno.h>
-*/
+
 
 enum config_type {
     CONFIG_VALUE = 0,
@@ -45,5 +37,7 @@ Config *config_pair_put(Config *config, char *, Config *);
 void *config_value_get(Config *);
 Config *config_list_get(Config *, uint32_t);
 Config *config_pair_get(Config *, char *);
+
+int config_dump(Config *, FILE *);
 
 #endif

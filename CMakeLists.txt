@@ -10,7 +10,7 @@ project(libkcnf VERSION 0.1
 		DESCRIPTION "Koko's Config File Library"
 		LANGUAGES C)
 
-add_library(kcnf STATIC src/value.c src/list.c src/pair.c src/parse.c src/util.c src/base64.c)
+add_library(kcnf STATIC src/value.c src/list.c src/pair.c src/parse.c src/dump.c src/util.c src/base64.c)
 
 add_executable(demo1 demo/kcnf.c)
 

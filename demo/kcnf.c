@@ -34,5 +34,9 @@ int main() {
     subvalue = config_pair_get(config, "nested_value");
     printf("nested_value: %s\n", config_value_get(subvalue));
 
+    FILE *file_new = fopen("dump.kcnf", "w");
+
+    config_dump(config, file_new);
+
     return 0;
 }
