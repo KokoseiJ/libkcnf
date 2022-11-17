@@ -7,10 +7,14 @@ else()
 endif()
 
 project(libkcnf VERSION 0.1
-		   DESCRIPTION "Koko's Config File Library"
-		   LANGUAGES C)
+		DESCRIPTION "Koko's Config File Library"
+		LANGUAGES C)
 
-add_library(kcnf STATIC src/kcnf.c src/base64.c src/base64.h include/libkcnf/kcnf.h)
+add_library(kcnf STATIC src/value.c src/list.c src/pair.c src/parse.c src/util.c src/base64.c)
+
+add_executable(demo1 demo/kcnf.c)
 
 target_include_directories(kcnf PUBLIC include)
+
+target_link_libraries(demo1 kcnf)
 

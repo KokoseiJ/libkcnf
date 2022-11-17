@@ -1,4 +1,4 @@
-#include "src/parse.h"
+#include "parse.h"
 
 Config *config_value_parse(Config *, char **);
 Config *config_list_parse(Config *, char **);
