@@ -35,7 +35,7 @@ int b64encode(void *in, size_t inlen, char *out, size_t outlen) {
     uint32_t tempnum;
     size_t i, outptr = 0;
 
-    if (outlen < b64enclen(inlen) + 1) return 1;
+    if (outlen < b64enclen(inlen)) return 1;
 
     for (i=0; i<inlen; i+=3) {
         num3[0] = ((uint8_t *)in)[i];
