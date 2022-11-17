@@ -1,6 +1,10 @@
 #ifndef INCL_KCNF_H
 #define INCL_KCNF_H
 
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
+/*
 #include "base64.h"
 #include "util.h"
 #include <stdio.h>
@@ -8,6 +12,7 @@
 #include <stdint.h>
 #include <string.h>
 #include <errno.h>
+*/
 
 enum config_type {
     CONFIG_VALUE = 0,
